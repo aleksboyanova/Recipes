@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/recipes.css" rel="stylesheet">
+  <title>Recipes</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Holidays</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favorites</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-3 mt-md-5">
+      <h2>What to cook today?</h2>
+      <div class="col-12 col-md-3">
+        <div class="card mt-2 mt-md-0">
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" placeholder="Search dish, ingredients..." id="iName">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="dName">Name of dish</label>
+                <select class="form-select" id="dName">
+                  <option value="">Choose</option>
+                  <option value="Crock Pot Roast">Crock Pot Roast</option>
+                  <option value="Roasted Asparagus">Roasted Asparagus</option>
+                  <option value="Curried Lentils and Rice">Curried Lentils and Rice</option>
+                  <option value="Big Night Pizza">Big Night Pizza</option>
+                  <option value="Cranberry and Apple Stuffed Acorn Squash">Cranberry and Apple Stuffed Acorn Squash
+                  </option>
+                  <option value="Mic's Yorkshire Puds">Mic's Yorkshire Puds</option>
+                  <option value="Old-Fashioned Oatmeal Cookies">Old-Fashioned Oatmeal Cookies</option>
+                  <option value="Blueberry Oatmeal Squares">Blueberry Oatmeal Squares</option>
+                  <option value="Curried chicken salad">Curried chicken salad</option>
+                </select>
+                <br>
+                <div class="mb-3">
+                  <label class="form-label">Ingredients</label>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="beef roast" id="beef_roast"
+                      name="checkbox">
+                    <label class="form-check-label" for="beef_roast">
+                      Beef roast
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="asparagus" id="asparagus"
+                      name="checkbox">
+                    <label class="form-check-label" for="asparagus">
+                      Asparagus
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="olive oil" id="olive_oil"
+                      name="checkbox">
+                    <label class="form-check-label" for="olive_oil">
+                      Olive oil
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="basmati rice" id="basmati rice" name="checkbox">
+                    <label class="form-check-label" for="basmati rice">
+                      Rice
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="baking powder" id="powder"
+                      name="checkbox">
+                    <label class="form-check-label" for="powder">
+                      Powder
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="salt" id="salt" name="checkbox">
+                    <label class="form-check-label" for="salt">
+                      Salt
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="yeast" id="yeast"
+                      name="checkbox">
+                    <label class="form-check-label" for="yeast">
+                      Yeast
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="flour" id="flour"
+                      name="checkbox">
+                    <label class="form-check-label" for="flour">
+                      Flour
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="sugar" id="sugar"
+                      name="checkbox">
+                    <label class="form-check-label" for="sugar">
+                      Sugar
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="pizza sauce" id="sauce"
+                      name="checkbox">
+                    <label class="form-check-label" for="sauce">
+                      Sauce
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="mozzarella cheese" id="cheese"
+                      name="checkbox">
+                    <label class="form-check-label" for="cheese">
+                      Cheese
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="cinnamon" id="cinnamon"
+                      name="checkbox">
+                    <label class="form-check-label" for="cinnamon">
+                      Cinnamon
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="eggs" id="eggs" name="checkbox">
+                    <label class="form-check-label" for="eggs">
+                      Eggs
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="milk" id="milk" name="checkbox">
+                    <label class="form-check-label" for="milk">
+                      Milk
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="soda" id="soda" name="checkbox">
+                    <label class="form-check-label" for="soda">
+                      Soda
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="chopped nuts" id="nuts" name="checkbox">
+                    <label class="form-check-label" for="nuts">
+                      Nuts
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="melted butter" id="butter" name="checkbox">
+                    <label class="form-check-label" for="butter">
+                      Butter
+                    </label>
+                  </div>
+                  <div class="form-check-label">
+                    <input class="form-check-input complexity-btn" type="checkbox" value="orange juice" id="juice"
+                      name="checkbox">
+                    <label class="form-check-label" for="juice">
+                      Juice
+                    </label>
+                    <div class="form-check-label">
+                      <input class="form-check-input complexity-btn" type="checkbox" value="mayonnaise" id="mayonnaise"
+                        name="checkbox">
+                      <label class="form-check-label" for="mayonnaise">
+                        Mayonnaise
+                      </label>
+                    </div>
+                    <div class="form-check-label">
+                      <input class="form-check-input complexity-btn" type="checkbox" value="oats" id="oats"
+                        name="checkbox">
+                      <label class="form-check-label" for="oats">
+                        Oats
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div style="text-align: right;">
+                  <button id="get-recipes" type="button" class="btn btn-primary">Find</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mt-2 mt-md-0">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="card-title">Result</h5>
+            <div class="btn-group" role="group" aria-label="Switch view">
+              <button id="list-view" type="button" class="btn btn-primary">
+                <i class="fas fa-th-list"></i>
+              </button>
+              <button id="grid-view" type="button" class="btn btn-outline-primary">
+                <i class="fas fa-grip-horizontal"></i>
+              </button>
+            </div>
+
+          </div>
+          <hr />
+          <div id="recipes-list" class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+    integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+
+  <script src="js/recipes.js"></script>
+
+  <div id="recipes-list-template" class="d-none">
+    <div class="d-flex py-1">
+      <div class="px-3 flex-grow-1">
+        <div class="d-flex align-items-start justify-content-between">
+          <div>
+            <div class="fw-bold recipes-dish-name"></div>
+          </div>
+        </div>
+        <div class="pt-3 col-3">
+          <img src="" class="img-fluid img-recipe" />
+        </div>
+        <div class="recipes-overview pt-3"></div>
+        <div class="steps"></div>
+      </div>
+    </div>
+    <hr class="my-1">
+  </div>
+
+  <div id="recipes-grid-template" class="d-none">
+    <div class="col-md-4 mt-3" style="max-height: 300px;overflow-y: scroll;">
+      <div class="grid-recipes-container img-thumbnail mb-3">
+        <div class="row">
+          <img src="" class="img-fluid img-recipe" />
+          <div class="px-2 w">
+            <div class="fw-bold recipes-dish-name"></div>
+          </div>
+        </div>
+        <div class="recipes-overview pt-3"></div>
+        <div class="steps"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

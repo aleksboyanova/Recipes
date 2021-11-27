@@ -1,0 +1,7 @@
+.grid-recipes-container .recipes-overview {
+    height: 115px;
+    overflow: hidden;
+}
+.recipes-steps {
+    max-width: 220px;
+}
